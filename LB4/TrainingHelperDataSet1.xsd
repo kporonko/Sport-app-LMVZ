@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="TrainingHelperDataSet1" targetNamespace="http://tempuri.org/TrainingHelperDataSet1.xsd" xmlns:mstns="http://tempuri.org/TrainingHelperDataSet1.xsd" xmlns="http://tempuri.org/TrainingHelperDataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="TrainingHelperConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="TrainingHelperConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.LB4.Properties.Settings.GlobalReference.Default.TrainingHelperConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="ExerciseTableAdapter" GeneratorDataComponentClassName="ExerciseTableAdapter" Name="Exercise" UserDataComponentName="ExerciseTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="TrainingHelperConnectionString (Settings)" DbObjectName="TrainingHelper.dbo.Exercise" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Exercise_Photo FROM dbo.Exercise</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Exercise_Photo" DataSetColumn="Exercise_Photo" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="TrainingHelperDataSet1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="TrainingHelperDataSet1" msprop:Generator_UserDSName="TrainingHelperDataSet1">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Exercise" msprop:Generator_TableClassName="ExerciseDataTable" msprop:Generator_TableVarName="tableExercise" msprop:Generator_TablePropName="Exercise" msprop:Generator_RowDeletingName="ExerciseRowDeleting" msprop:Generator_RowChangingName="ExerciseRowChanging" msprop:Generator_RowEvHandlerName="ExerciseRowChangeEventHandler" msprop:Generator_RowDeletedName="ExerciseRowDeleted" msprop:Generator_UserTableName="Exercise" msprop:Generator_RowChangedName="ExerciseRowChanged" msprop:Generator_RowEvArgName="ExerciseRowChangeEvent" msprop:Generator_RowClassName="ExerciseRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Exercise_Photo" msprop:Generator_ColumnVarNameInTable="columnExercise_Photo" msprop:Generator_ColumnPropNameInRow="Exercise_Photo" msprop:Generator_ColumnPropNameInTable="Exercise_PhotoColumn" msprop:Generator_UserColumnName="Exercise_Photo" type="xs:base64Binary" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
